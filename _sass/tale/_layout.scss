@@ -5,7 +5,7 @@
 }
 
 main,
-footer,
+footer > .footer_wrap,
 .nav-container {
   display: block;
   margin: 0 auto;
@@ -81,12 +81,62 @@ footer,
 }
 
 footer {
-  font-family: $serif-secondary;
-  padding: 2rem 0;
-  text-align: center;
+  font-family: $sans-serif;
+  padding: 36px 0 46px 0;
+  background-color: $grey-3;
+  color: $default-tint;
+  border-top: 1px solid $grey-2;
+  border-bottom: 1px solid $grey-2;
 
-  span {
-    color: $default-color;
-    font-size: .8rem;
+  .footer_wrap {
+    font-style: normal;
+    position: relative;
+
+    .information {
+      display: inline-block;
+
+      .myname {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 4px;
+      }
+      .email {
+        font-size: 16px;
+        color: $default-tint;
+      }
+
+      a.email:hover {
+        opacity: .6;
+      }
+
+      .accounts {
+        margin-top: 36px;
+        a {
+          margin-right: 24px;
+          svg {
+            fill: $default-tint;
+            width: 20px;
+          }
+        }
+        a:hover {
+          opacity: .6;
+        }
+      }
+    }
+    .copyright {
+      float: right;
+      position: absolute;
+      right: 0;
+      bottom: 2px;
+
+      @media (max-width: $break-small) {
+        float: none;
+        position: static;
+        margin-top: 6px;
+      }
+      span {
+        font-size: 16px;
+      }
+    }
   }
 }

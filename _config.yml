@@ -1,6 +1,7 @@
 # Site settings
-title:          Tale
+title:          Joohyuk Jung
 description:    "Minimal Jekyll theme for storytellers"
+baseurl:        ""
 url:            "https://jungjoohyuk.github.io"
 
 # Google Analytics
@@ -8,9 +9,10 @@ google_analytics: UA—XXXXXXXX-X
 
 # Author
 author:
-  name:         Chester How
-  url:          https://chester.how
-  email:        chesterhow@gmail.com
+  name:         Joohyuk Jung
+  url:          https://jungjoohyuk.github.io
+  email:        joohyukjung@gmail.com
+  github:       JUNGJOOHYUK
 
 # Build settings
 markdown:       kramdown
@@ -34,4 +36,4 @@ permalink:      /:year-:month-:day/:title
 paginate:       5
 
 # Excludes
-exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
+exclude: [ Gemfile, Gemfile.lock, jungjoohyuk.gemspec ]
